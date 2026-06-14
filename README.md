@@ -18,3 +18,17 @@ https://smart-budget-tracker-2aid.onrender.com
 - Category-wise tracking (Food, Travel, Shopping, Bills, etc.)
 
 ## 📁 Project Structure
+smart-budget-tracker/
+
+├── server.js
+
+├── package.json
+
+└── public/
+
+└── index.html
+
+## 🚀 Run Locally
+npm install
+npm start
+Open http://localhost:3000
