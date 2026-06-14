@@ -1,13 +1,11 @@
 {
   "name": "smart-budget-tracker",
   "version": "1.0.0",
-  "description": "Smart Budget Tracker App",
-  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "better-sqlite3": "^9.4.3"
+    "sqlite3": "^5.1.6"
   }
 }
