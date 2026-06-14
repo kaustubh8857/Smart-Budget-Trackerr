@@ -1,23 +1,20 @@
 # 💰 Smart Budget Tracker
 
-A full-stack expense tracking web application built with Java Spring Boot.
+A full-stack expense tracking web application built with Node.js and Express.js.
+
+## 🌐 Live Demo
+https://smart-budget-tracker-2aid.onrender.com
 
 ## 🛠️ Tech Stack
-- Java 21
-- Spring Boot
-- Spring Data JPA
-- H2 Database
-- HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** SQLite
+- **Deployment:** Render
 
 ## ✨ Features
-- Add/Delete expenses
-- Category-wise tracking (Food, Travel, Shopping, Bills etc.)
-- Real-time total & average calculation
-- REST API with full CRUD operations
-- Responsive UI
+- Add expenses with title, amount, and category
+- Delete expenses
+- Real-time total calculation
+- Category-wise tracking (Food, Travel, Shopping, Bills, etc.)
 
-## 🚀 How to Run
-```bash
-./mvnw spring-boot:run
-```
-Open: http://localhost:8081
+## 📁 Project Structure
