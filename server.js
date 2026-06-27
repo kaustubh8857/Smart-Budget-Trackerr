@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://chaturvedikaustubh6_db_user:cLEqSsXVQ8VhT0pv@cluster0.ueu5b4r.mongodb.net/budgettracker?appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI ;
 
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('MongoDB connected successfully.'))
