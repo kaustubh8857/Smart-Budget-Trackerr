@@ -3,12 +3,12 @@
 A full-stack expense tracking web application built with Node.js and Express.js.
 
 ## 🌐 Live Demo
-https://smart-budget-tracker-2aid.onrender.com
+https://smart-budget-trackerr.onrender.com
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** React.js, Tailwind CSS, Vite, Chart.js
 - **Backend:** Node.js, Express.js
-- **Database:** SQLite
+- **Database:** MongoDB (Atlas)
 - **Deployment:** Render
 
 ## ✨ Features
@@ -16,17 +16,31 @@ https://smart-budget-tracker-2aid.onrender.com
 - Delete expenses
 - Real-time total calculation
 - Category-wise tracking (Food, Travel, Shopping, Bills, etc.)
+- Interactive pie chart for category-wise spending visualization
+- Responsive, component-based UI
 
 ## 📁 Project Structure
 smart-budget-tracker/
 
 ├── server.js
-
 ├── package.json
-
-└── public/
-
-└── index.html
+├── .env
+└── client/
+├── src/
+│   ├── components/
+│   │   ├── ExpenseForm.jsx
+│   │   ├── ExpenseList.jsx
+│   │   ├── ExpenseChart.jsx
+│   │   ├── StatsCard.jsx
+│   │   └── Modals.jsx
+│   ├── App.jsx
+│   ├── constants.js
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── vite.config.js
+├── tailwind.config.js
+└── package.json
 
 ## 🚀 Run Locally
 npm install
