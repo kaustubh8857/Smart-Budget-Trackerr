@@ -1,10 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 
 const app = express();
 
-const MONGODB_URI = process.env.MONGODB_URI ;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('MongoDB connected successfully.'))
@@ -20,7 +21,7 @@ const expenseSchema = new mongoose.Schema({
 const Expense = mongoose.model('Expense', expenseSchema);
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
 app.get('/api/expenses', async (req, res) => {
   try {
@@ -52,6 +53,11 @@ app.delete('/api/expenses/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: 'Failed to delete expense.' });
   }
+});
+
+// React ka index.html serve karo baaki sab routes ke liye (SPA fallback)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
